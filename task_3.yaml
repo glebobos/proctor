@@ -1,0 +1,23 @@
+Use:
+  Dir: base
+  Files:
+    - root.tf
+    - s3.tf
+    - variables.tf
+Check:
+  Tag:
+    Key:
+      Count: 
+        - Owner=1
+        - Project=1
+        - Terraform=1
+  Resource:
+    Count: 
+      - aws_s3_bucket=1
+      - random_string=1
+    Hardcode:
+      Value: bucket
+    Parameter:
+      Value:
+        - upper=false
+        - special=false  

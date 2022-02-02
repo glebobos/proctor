@@ -1,0 +1,35 @@
+Use:
+  Dir: base
+  Files:
+    - root.tf
+    - vpc.tf
+    - sg.tf
+    - variables.tf
+Check:
+  Tag:
+    Key:
+      Count: 
+        - Owner=9
+        - Project=9
+        - Terraform=9
+  Resource:
+    Count: 
+      - aws_security_group_rule=3
+      - aws_security_group=3
+    Hardcode:
+      Value: 
+        - vpc_id
+        - security_group_id
+        - source_security_group_id
+    Parameter:
+      Value: 
+        - name=lb-http-inbound
+        - name=ssh-inbound
+        - name=http-inbound
+        - cidr_blocks=
+        - from_port=80
+        - to_port=80
+        - from_port=22
+        - to_port=22
+        - protocol=tcp
+        - description=

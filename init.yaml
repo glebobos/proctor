@@ -1,0 +1,12 @@
+Add:
+  Gitignore:
+    - *.terraform*
+    - *.tfstate*
+    - .DS_Store
+    - cache
+    - results*
+  Dir:
+    Main: tf_aws_lab
+    Workflow:
+      - base
+      - compute

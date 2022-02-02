@@ -1,0 +1,21 @@
+Use:
+  Dir: base
+  Files:
+    - root.tf
+    - key_pair.tf
+    - variables.tf
+Check:
+  Init:
+    Variable:
+      Key: ssh_key
+      Value: test
+  Tag:
+    Key:
+      Count: 
+        - Owner=1
+        - Project=1
+        - Terraform=1
+  Resource:
+    Count: aws_key_pair=1
+    Parameter: 
+      Value: public_key=test

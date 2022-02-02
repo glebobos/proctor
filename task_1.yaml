@@ -1,0 +1,44 @@
+Use:
+  Dir: base
+  Files:
+    - root.tf
+    - vpc.tf
+    - variables.tf
+Check:
+  Tag:
+    Key:
+      Count: 
+        - Owner=6
+        - Project=6
+        - Terraform=6
+        - Name=6
+    Name:
+      Value: 
+        - 01-igw
+        - 01-rt
+        - 01-subnet-public-a
+        - 01-subnet-public-b
+        - 01-subnet-public-c
+        - 01-vpc
+  Resource:
+    Count: 
+      - aws_route_table=1
+      - aws_subnet=3
+      - aws_internet_gateway=1
+      - aws_route_table_association=3
+      - aws_vpc=1
+    Hardcode:
+      Value: 
+        - route[0]/gateway_id
+        - vpc_id
+        - subnet_id
+        - route_table_id
+    Parameter:
+      Value: 
+        - cidr_block=10.10.1.0/24
+        - cidr_block=10.10.3.0/24
+        - cidr_block=10.10.5.0/24
+        - cidr_block=10.10.0.0/16
+        - availability_zone=us-east-1a
+        - availability_zone=us-east-1b
+        - availability_zone=us-east-1c
