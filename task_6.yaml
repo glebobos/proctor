@@ -10,6 +10,12 @@ Use:
     - iam.tf
     - files/*.json
 Check:
+  Output:
+    Value:
+      - iam_instance_profile_name=aws_iam_instance_profile
+      - public_subnet_id=aws_subnet
+      - security_group_id=aws_security_group
+      - vpc_id=aws_vpc
   Tag:
     Key:
       Count: 
