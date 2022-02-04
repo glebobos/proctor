@@ -18,9 +18,9 @@ Check:
       - aws_security_group=3
     Hardcode:
       Value: 
-        - vpc_id
-        - security_group_id
-        - source_security_group_id
+        - vpc_id=8
+        - security_group_id=3
+        - source_security_group_id=3
     Parameter:
       Value: 
         - name=lb-http-inbound
