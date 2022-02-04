@@ -22,7 +22,7 @@ Check:
       - aws_iam_instance_profile=1
       - aws_iam_group=1
     Hardcode:
-      Value: policy
+      Value: policy=1
     Parameter:
       Value: name=test-move
   Policy:
