@@ -29,10 +29,10 @@ Check:
       - aws_vpc=1
     Hardcode:
       Value: 
-        - route[0]/gateway_id
-        - vpc_id
-        - subnet_id
-        - route_table_id
+        - route[0]/gateway_id=1
+        - vpc_id=5
+        - subnet_id=3
+        - route_table_id=3
     Parameter:
       Value: 
         - cidr_block=10.10.1.0/24
