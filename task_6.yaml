@@ -6,6 +6,7 @@ Use:
     - variables.tf
     - outputs.tf
     - sg.tf
+    - s3.tf
     - iam.tf
 Check:
   Tag:
