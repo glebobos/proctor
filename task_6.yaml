@@ -1,0 +1,23 @@
+Use:
+  Dir: base
+  Files:
+    - root.tf
+    - vpc.tf
+    - variables.tf
+    - outputs.tf
+Check:
+  Tag:
+    Key:
+      Count: 
+        - Owner=6
+        - Project=6
+        - Terraform=6
+        - Name=6
+    Name:
+      Value: 
+        - 01-igw
+        - 01-rt
+        - 01-subnet-public-a
+        - 01-subnet-public-b
+        - 01-subnet-public-c
+        - 01-vpc
