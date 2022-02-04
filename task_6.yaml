@@ -5,6 +5,8 @@ Use:
     - vpc.tf
     - variables.tf
     - outputs.tf
+    - sg.tf
+    - iam.tf
 Check:
   Tag:
     Key:
