@@ -16,7 +16,7 @@ Check:
       - aws_s3_bucket=1
       - random_string=1
     Hardcode:
-      Value: bucket
+      Value: bucket=1
     Parameter:
       Value:
         - upper=false
