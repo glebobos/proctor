@@ -8,6 +8,7 @@ Use:
     - sg.tf
     - s3.tf
     - iam.tf
+    - files/*.json
 Check:
   Tag:
     Key:
