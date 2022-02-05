@@ -4,7 +4,6 @@ Add:
     - *.tfstate*
     - .DS_Store
     - cache
-    - results*
   Dir:
     Workflow:
       - base
