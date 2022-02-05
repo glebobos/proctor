@@ -20,3 +20,4 @@ Check:
       - security_group_id_http_lb=aws_security_group.*.id
       - vpc_id=aws_vpc.*.id
       - key_name=aws_key_pair.*.key_name
+      - s3_bucket_name=aws_s3_bucket.*.id
