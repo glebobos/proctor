@@ -6,7 +6,6 @@ Add:
     - cache
     - results*
   Dir:
-    Main: tf_aws_lab
     Workflow:
       - base
       - compute
