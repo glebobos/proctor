@@ -10,6 +10,12 @@ Use:
     - files/*.sh
     - variables.tf
 Check:
+  Tag:
+    Key:
+      Count: 
+        - Owner=2
+        - Project=2
+        - Terraform=2
   Script:
     Body:
       - /bin/bash
@@ -27,7 +33,4 @@ Check:
     Hardcode:
       Value: 
         - source_security_group_id=1
-        - vpc_zone_identifier=1
-        - subnets=1
-        - security_groups=1
         - autoscaling_group_name=1
