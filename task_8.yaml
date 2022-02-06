@@ -1,0 +1,13 @@
+Use:
+  Dir: compute
+  Remote: 
+    Dir: base
+    Backend: terraform.tfstate
+  Files:
+    - data.tf
+    - root.tf
+    - asg.tf
+Check:
+  Data:
+    Remote:
+      Path: ../base/terraform.tfstate
