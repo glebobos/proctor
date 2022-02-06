@@ -7,7 +7,12 @@ Use:
     - data.tf
     - root.tf
     - asg.tf
+    - files/*.sh
 Check:
   Data:
     Remote:
       Path: ../base/terraform.tfstate
+  Script:
+    Body:
+      - /bin/bash
+      - http://169.254.169.254/latest/meta-data/instance-id
