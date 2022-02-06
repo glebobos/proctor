@@ -21,15 +21,15 @@ Check:
       - aws_autoscaling_group=1
       - aws_elb=1
       - aws_autoscaling_attachment=1
-  Parameter:
-    Value: 
-      - instance_type=t2.micro
-  Hardcode:
-    Value: 
-      - key_name=1
-      - image_id=1
-      - source_security_group_id=3
-      - vpc_zone_identifier=1
-      - subnets=1
-      - security_groups=1
-      - autoscaling_group_name=1
+    Parameter:
+      Value: 
+        - instance_type=t2.micro
+    Hardcode:
+      Value: 
+        - key_name=1
+        - image_id=1
+        - source_security_group_id=3
+        - vpc_zone_identifier=1
+        - subnets=1
+        - security_groups=1
+        - autoscaling_group_name=1
