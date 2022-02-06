@@ -17,7 +17,6 @@ Check:
   Resource:
     Count: 
       - aws_launch_template=1
-      - aws_ami=1
       - aws_autoscaling_group=1
       - aws_elb=1
       - aws_autoscaling_attachment=1
