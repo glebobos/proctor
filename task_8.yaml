@@ -26,6 +26,8 @@ Check:
         - key_name=test
     Hardcode:
       Value: 
-        - image_id=1
         - source_security_group_id=1
+        - vpc_zone_identifier=1
+        - subnets=1
+        - security_groups=1
         - autoscaling_group_name=1
