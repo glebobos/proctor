@@ -23,11 +23,12 @@ Check:
     Parameter:
       Value: 
         - instance_type=t2.micro
+        - key_name=test
     Hardcode:
       Value: 
         - key_name=1
         - image_id=1
-        - source_security_group_id=3
+        - source_security_group_id=1
         - vpc_zone_identifier=1
         - subnets=1
         - security_groups=1
