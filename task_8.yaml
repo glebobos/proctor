@@ -8,6 +8,7 @@ Use:
     - root.tf
     - asg.tf
     - files/*.sh
+    - variables.tf
 Check:
   Data:
     Remote:
