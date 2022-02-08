@@ -6,6 +6,7 @@ Use:
     - iam.tf
     - variables.tf
     - files/*.json
+    - locals.tf
 Check:
   Init:
     Variable:

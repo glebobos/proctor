@@ -5,6 +5,7 @@ Use:
     - vpc.tf
     - sg.tf
     - variables.tf
+    - locals.tf
 Check:
   Init:
     Variable:

@@ -10,6 +10,7 @@ Use:
     - iam.tf
     - key_pair.tf
     - files/*.json
+    - locals.tf
 Check:
   Init:
     Variable:

@@ -4,6 +4,7 @@ Use:
     - root.tf
     - key_pair.tf
     - variables.tf
+    - locals.tf
 Check:
   Init:
     Variable:

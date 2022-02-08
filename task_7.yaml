@@ -6,6 +6,7 @@ Use:
   Files:
     - data.tf
     - root.tf
+    - locals.tf
 Check:
   Init:
     Variable:

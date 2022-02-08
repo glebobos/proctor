@@ -3,6 +3,7 @@ Use:
   Files:
     - root.tf
     - vpc.tf
+    - locals.tf
 Check:
   Tag:
     Key:

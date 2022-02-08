@@ -4,6 +4,7 @@ Use:
     - root.tf
     - s3.tf
     - variables.tf
+    - locals.tf
 Check:
   Init:
     Variable:
