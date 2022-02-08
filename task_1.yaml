@@ -5,6 +5,10 @@ Use:
     - vpc.tf
     - variables.tf
 Check:
+  Init:
+    Variable:
+      Key: ssh_key
+      Value: test
   Tag:
     Key:
       Count: 

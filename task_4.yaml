@@ -7,6 +7,10 @@ Use:
     - variables.tf
     - files/*.json
 Check:
+  Init:
+    Variable:
+      Key: ssh_key
+      Value: test
   Tag:
     Key:
       Count:
