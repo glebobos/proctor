@@ -3,12 +3,12 @@ Use:
   Files:
     - root.tf
     - vpc.tf
-    - variables.tf
+    # - variables.tf
 Check:
-  Init:
-    Variable:
-      Key: ssh_key
-      Value: test
+  # Init:
+  #   Variable:
+  #     Key: ssh_key
+  #     Value: test
   Tag:
     Key:
       Count: 
