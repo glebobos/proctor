@@ -8,10 +8,6 @@ Use:
     - root.tf
     - locals.tf
 Check:
-  Init:
-    Variable:
-      Key: ssh_key
-      Value: test
   Data:
     Remote:
       Path: ../base/terraform.tfstate
