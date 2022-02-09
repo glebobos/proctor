@@ -35,4 +35,4 @@ Check:
       - s3:Delete
       - s3:Put
       - s3:Create
-      - :.*/\*
+      - ":.*/\*"
