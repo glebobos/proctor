@@ -1,0 +1,38 @@
+Use:
+  Dir: base
+  Files:
+    - root.tf
+    - s3.tf
+    - iam.tf
+    - variables.tf
+    - files/*.json
+    - locals.tf
+Check:
+  Init:
+    Variable:
+      Key: ssh_key
+      Value: test
+  Tag:
+    Key:
+      Count:
+        - Owner=4
+        - Project=4
+        - Terraform=4
+  Resource:
+    Count: 
+      - aws_s3_bucket=1
+      - random_string=1
+      - aws_iam_role=1
+      - aws_iam_policy=1
+      - aws_iam_instance_profile=1
+      - aws_iam_group=1
+    Hardcode:
+      Value: policy=1
+    Parameter:
+      Value: name=test-move
+  Policy:
+    Json: 
+      - s3:Delete
+      - s3:Put
+      - s3:Create
+      - '//*'
